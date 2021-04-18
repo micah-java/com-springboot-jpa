@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/springbatch?characterEncoding=UTF8&serverTimezone=UTC&useSSL=false&useUnicode=true
+    username: root
+    password: root
+
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
